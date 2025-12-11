@@ -1,0 +1,63 @@
+Last login: Thu Dec 11 09:41:57 on ttys004
+ankitamane@Ankitas-MacBook-Pro src % cd /Users/ankitamane/Documents/NEU/SEM1/NLP/CustomRag
+ankitamane@Ankitas-MacBook-Pro CustomRag % python3 BaselineRagCot.py                            
+/Users/ankitamane/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Ollama connection successful
+
+Model: llama3.2
+Samples per dataset: 100
+Timestamp: 2025-12-11 10:55:08
+Using the latest cached version of the dataset since fever couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'v1.0' at /Users/ankitamane/.cache/huggingface/datasets/fever/v1.0/1.0.0/7f8936e0558704771b08c7ce9cc202071b29a0050603374507ba61d23c00a58e (last modified on Thu Dec 11 10:30:04 2025).
+DATASET: HotpotQA
+
+Evaluating Zero-Shot CoT on HotpotQA...
+Zero-Shot CoT: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [10:17<00:00,  6.18s/it]
+Zero-Shot CoT: EM=48.00%, F1=56.98%
+
+Evaluating Few-Shot CoT on HotpotQA...
+Few-Shot CoT: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [10:16<00:00,  6.16s/it]
+Few-Shot CoT: EM=55.00%, F1=63.40%
+DATASET: NQ-Open
+
+Evaluating Zero-Shot CoT on NQ-Open...
+Zero-Shot CoT: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [02:49<00:00,  1.69s/it]
+Zero-Shot CoT: EM=21.00%, F1=28.78%
+
+Evaluating Few-Shot CoT on NQ-Open...
+Few-Shot CoT: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [02:44<00:00,  1.65s/it]
+Few-Shot CoT: EM=20.00%, F1=26.15%
+DATASET: FEVER
+
+Evaluating Zero-Shot CoT on FEVER...
+Zero-Shot CoT: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [03:58<00:00,  2.38s/it]
+Zero-Shot CoT: EM=57.00%, F1=57.00%
+
+Evaluating Few-Shot CoT on FEVER...
+Few-Shot CoT: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [03:48<00:00,  2.29s/it]
+Few-Shot CoT: EM=52.00%, F1=52.00%
+
+ Results saved to: /Users/ankitamane/Documents/NEU/SEM1/NLP/evaluation_results_cot/cot_comparison_20251211_112906.json
+
+Evaluation complete!
+ankitamane@Ankitas-MacBook-Pro CustomRag % 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
