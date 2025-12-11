@@ -432,7 +432,7 @@ def print_results(results: Dict, dataset_name: str):
 # Main Execution
 if __name__ == "__main__":
     
-    GROQ_API_KEY = "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"  
+    GROQ_API_KEY = "groq_api" #removed while committing on git  
     FAISS_INDEX_PATH = "/Users/ankitamane/Documents/NEU/SEM1/NLP/final_rag_database/faiss_index.bin"  
     DOCUMENTS_PICKLE_PATH = "/Users/ankitamane/Documents/NEU/SEM1/NLP/final_rag_database/documents.pkl"  
     NUM_SAMPLES = 100 
