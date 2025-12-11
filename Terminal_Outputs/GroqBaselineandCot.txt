@@ -1,0 +1,119 @@
+Last login: Thu Dec 11 10:45:41 on ttys000
+ankitamane@Ankitas-MacBook-Pro main % cd /Users/ankitamane/Documents/NEU/SEM1/NLP/CustomRag
+ankitamane@Ankitas-MacBook-Pro CustomRag % cd main
+ankitamane@Ankitas-MacBook-Pro main % python3 GroqRag.py                                   
+/Users/ankitamane/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Initializing Groq RAG System...
+Loading embedding model
+Loading FAISS index from /Users/ankitamane/Documents/NEU/SEM1/NLP/final_rag_database/faiss_index.bin...
+Index loaded with 787110 vectors
+Evaluating on all datasets:
+Samples per dataset: 100
+EVALUATING ON HOTPOTQA
+
+Evaluating Baseline RAG...
+Baseline RAG: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [04:43<00:00,  2.84s/it]
+
+Evaluating RAG + Zero-Shot CoT...
+RAG + Zero-Shot CoT: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [05:47<00:00,  3.48s/it]
+
+Evaluating RAG + Few-Shot CoT...
+RAG + Few-Shot CoT: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [06:34<00:00,  3.94s/it]
+RESULTS FOR HOTPOTQA
+Baseline RAG:
+  Exact Match: 42.00%
+  F1 Score:    51.53%
+  Accuracy:    42.00%
+  Samples:     100
+
+RAG + Zero-Shot CoT:
+  Exact Match: 41.00%
+  F1 Score:    50.56%
+  Accuracy:    41.00%
+  Samples:     100
+
+RAG + Few-Shot CoT:
+  Exact Match: 34.00%
+  F1 Score:    45.07%
+  Accuracy:    34.00%
+  Samples:     100
+
+EVALUATING ON NATURAL QUESTIONS
+
+Evaluating Baseline RAG...
+Baseline RAG: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [1:00:25<00:00, 36.26s/it]
+
+Evaluating RAG + Zero-Shot CoT...
+RAG + Zero-Shot CoT: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [06:05<00:00,  3.66s/it]
+
+Evaluating RAG + Few-Shot CoT...
+RAG + Few-Shot CoT: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [07:05<00:00,  4.25s/it]
+RESULTS FOR NATURAL QUESTIONS
+Baseline RAG:
+  Exact Match: 24.00%
+  F1 Score:    30.32%
+  Accuracy:    24.00%
+  Samples:     100
+
+RAG + Zero-Shot CoT:
+  Exact Match: 24.00%
+  F1 Score:    30.00%
+  Accuracy:    24.00%
+  Samples:     100
+
+RAG + Few-Shot CoT:
+  Exact Match: 23.00%
+  F1 Score:    28.13%
+  Accuracy:    23.00%
+  Samples:     100
+
+EVALUATING ON FEVER
+Using the latest cached version of the dataset since fever couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'v1.0' at /Users/ankitamane/.cache/huggingface/datasets/fever/v1.0/1.0.0/7f8936e0558704771b08c7ce9cc202071b29a0050603374507ba61d23c00a58e (last modified on Thu Dec 11 10:30:04 2025).
+
+Evaluating Baseline RAG...
+Baseline RAG: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [04:42<00:00,  2.82s/it]
+
+Evaluating RAG + Zero-Shot CoT...
+RAG + Zero-Shot CoT: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [04:48<00:00,  2.88s/it]
+
+Evaluating RAG + Few-Shot CoT...
+RAG + Few-Shot CoT: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [05:34<00:00,  3.34s/it]
+RESULTS FOR FEVER
+Baseline RAG:
+  Exact Match: 85.00%
+  F1 Score:    85.00%
+  Accuracy:    85.00%
+  Samples:     100
+
+RAG + Zero-Shot CoT:
+  Exact Match: 85.00%
+  F1 Score:    85.00%
+  Accuracy:    85.00%
+  Samples:     100
+
+RAG + Few-Shot CoT:
+  Exact Match: 78.00%
+  F1 Score:    78.00%
+  Accuracy:    78.00%
+  Samples:     100
+
+Results saved to 'groq_rag_results.json'
+Comparision table: 
+
+HotpotQA:
+  Baseline RAG              | EM: 42.00% | F1: 51.53% | Acc: 42.00%
+  RAG + Zero-Shot CoT       | EM: 41.00% | F1: 50.56% | Acc: 41.00%
+  RAG + Few-Shot CoT        | EM: 34.00% | F1: 45.07% | Acc: 34.00%
+
+Natural_Questions:
+  Baseline RAG              | EM: 24.00% | F1: 30.32% | Acc: 24.00%
+  RAG + Zero-Shot CoT       | EM: 24.00% | F1: 30.00% | Acc: 24.00%
+  RAG + Few-Shot CoT        | EM: 23.00% | F1: 28.13% | Acc: 23.00%
+
+FEVER:
+  Baseline RAG              | EM: 85.00% | F1: 85.00% | Acc: 85.00%
+  RAG + Zero-Shot CoT       | EM: 85.00% | F1: 85.00% | Acc: 85.00%
+  RAG + Few-Shot CoT        | EM: 78.00% | F1: 78.00% | Acc: 78.00%
+ankitamane@Ankitas-MacBook-Pro main % 
