@@ -1,0 +1,63 @@
+Last login: Thu Dec 11 09:07:10 on ttys000
+ankitamane@Ankitas-MacBook-Pro src % cd /Users/ankitamane/Documents/NEU/SEM1/NLP/CustomRag
+ankitamane@Ankitas-MacBook-Pro CustomRag % python3 evaluate_rag.py                              
+/Users/ankitamane/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+RAG system loaded: 576142 documents
+
+Model: llama3.2
+Embedding Model: all-MiniLM-L6-v2
+Target samples per dataset: 100
+Timestamp: 2025-12-11 09:28:30
+
+ Evaluating HotpotQA dataset
+Evaluating on HotpotQA Dataset
+Evaluating 100 samplesn
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [04:19<00:00,  2.59s/it]
+HotpotQA dataset Evaluation complete
+
+ Evaluating Natural Questions Open dataset
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [01:06<00:00,  1.50it/s]
+Natural Questions Open dataset evaluation complete
+
+ Evaluating FEVER dataset
+Evaluating on FEVER Dataset
+Using the latest cached version of the dataset since fever couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'v1.0' at /Users/ankitamane/.cache/huggingface/datasets/fever/v1.0/1.0.0/7f8936e0558704771b08c7ce9cc202071b29a0050603374507ba61d23c00a58e (last modified on Sun Dec  7 16:10:12 2025).
+Evaluating 100 samples
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [01:26<00:00,  1.16it/s]
+ FEVER complete dataset
+Evaluation Results Summary
+
+  HotpotQA:
+  Samples Evaluated: 100
+  Exact Match: 52.00%
+  F1 Score: 60.67%
+  Accuracy: 52.00%
+
+  Natural Questions Open:
+  Samples Evaluated: 100
+  Exact Match: 21.00%
+  F1 Score: 32.77%
+  Accuracy: 21.00%
+
+  FEVER:
+  Samples Evaluated: 100
+  Exact Match: 64.00%
+  Accuracy: 64.00%
+
+ Evaluation metrics saved to: /Users/ankitamane/Documents/NEU/SEM1/NLP/evaluation_results/metrics_summary_20251211_093527.json
+ Evaluation results saved to: /Users/ankitamane/Documents/NEU/SEM1/NLP/evaluation_results/detailed_results_20251211_093527.json
+ Summary CSV saved to: /Users/ankitamane/Documents/NEU/SEM1/NLP/evaluation_results/summary_20251211_093527.csv
+
+Evaluation complete!
+ankitamane@Ankitas-MacBook-Pro CustomRag % 
+
+
+
+
+
+
+
+
