@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Data & Models (too large)
+emb_corpus/
+data/
+*.memmap
+*.index
+*.tsv
+*.gz
+*.zip
+downloads/
+
+# Results
+plan_rag_extract_*/
+results/
+logs/
+*.log
+
+# API Keys
+.env
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
