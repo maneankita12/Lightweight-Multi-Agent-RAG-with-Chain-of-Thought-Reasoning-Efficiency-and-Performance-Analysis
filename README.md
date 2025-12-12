@@ -4,11 +4,6 @@
 
 This project implements and evaluates a comprehensive Retrieval-Augmented Generation (RAG) system enhanced with Chain-of-Thought (CoT) reasoning and Multi-Agent (MA) architectures. We systematically compare three progressive architectures (Baseline RAG, CoT-RAG, and MA-RAG) across multiple large language models including Ollama llama3.2 (3B), Groq Llama models (70B), and the Gemini family (2.0-flash, 2.5-flash variants) on three benchmark datasets: HotpotQA, Natural Questions, and FEVER.
 
-Repository Structure
-├── RAG_models/          # Model implementations and configurations
-├── Terminal_Outputs/    # Execution logs and results
-└── lightweight-marag/   # Core multi-agent RAG implementation
-
 ## 🎯 Key Features
 
 - **Progressive Architecture Comparison**: Baseline RAG → CoT-RAG → MA-RAG
