@@ -20,12 +20,12 @@ Our Multi-Agent RAG implementation builds upon the foundational work presented i
 
 ## 👥 Team Members
 
-- **Ankita Anil Mane** (NUID: 002540892) - Multi-Agent RAG Architecture & Gemini Model Integration
-- **Khyati Nirenkumar Amin** (NUID: 002511574) - Baseline & CoT-RAG Implementation, Ollama & Groq Models
-- **Raj Gupta** (NUID: 002068701) - Embedding Pipeline, FAISS Index, and Human Evaluation Framework
+- **Ankita Anil Mane** (NUID: 002540892) 
+- **Khyati Nirenkumar Amin** (NUID: 002511574)
+- **Raj Gupta** (NUID: 002068701)
 
 ## 🙏 Acknowledgments
 
-We thank the Northeastern University CS5100 Course Staff for their guidance, and Anthropic, Google, and Groq for providing API access for model evaluation. Special thanks to the open-source NLP community for the foundational tools and datasets that made this research possible.
+We thank the Northeastern University CS6120 Natural Language Processing Course Staff for their guidance, and Anthropic, Google, and Groq for providing API access for model evaluation. Special thanks to the open-source NLP community for the foundational tools and datasets that made this research possible.
 
 ---
